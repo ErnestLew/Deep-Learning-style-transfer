@@ -16,6 +16,7 @@ class MultiApp:
             "title": title,
             "function": func
         })
+        
 
     def run(self):
         # app = st.sidebar.radio(
@@ -23,5 +24,8 @@ class MultiApp:
             'Select from the options',
             self.apps,
             format_func=lambda app: app['title'])
+        
+
 
         app['function']()
+
